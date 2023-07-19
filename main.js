@@ -15,10 +15,12 @@ function adicionaLinha() {
     const inputNomeContato = document.getElementById('nome-contato');
     const inputNumeroContato = document.getElementById('numero-contato');
 
-    if (numeros.includes(parseFloat(inputNumeroContato.value))) {
-        alert(`O numero ${inputNumeroContato.value} ja foi cadastrado`);
-    } else {
-
+    if (nomes.includes(inputNomeContato.value)) {
+        alert(`O nome ${inputNomeContato.value} ja foi cadastrado`);    
+    } if (numeros.includes(parseFloat(inputNumeroContato.value))) {
+        alert(`O numero ${inputNumeroContato.value} ja foi cadastrado`)
+    }
+    else {
     nomes.push(inputNomeContato.value);
     numeros.push(parseFloat(inputNumeroContato.value));
 
